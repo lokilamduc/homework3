@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="mx-auto text-center">bài 1</h1>
+    <div class="container1 mx-5">
+      <div class="row">
+        <div class="form-group col-sm-4 mx-auto">
+          <label>Number1</label>
+          <input class="form-control" id="number1" placeholder="nhập số" />
+        </div>
+        <div class="form-group col-sm-4 mx-auto">
+          <label>number2</label>
+          <input class="form-control" id="number2" placeholder="nhập số" />
+        </div>
+        <div class="form-group col-sm-4 mx-auto">
+          <label>Number3</label>
+          <input class="form-control" id="number3" placeholder="nhập số" />
+        </div>
+        <div class="text-center col-sm-12 mx-auto">
+          <button class="btn btn-primary" id="sapxep">sắp xếp</button>
+        </div>
+        <div
+          style="display: none"
+          id="result1-wrapper"
+          class="text-center col-sm-12 mx-auto"
+        >
+          <p id="result1"></p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+
+    <h1 class="mx-auto text-center">bài 2</h1>
+    <div class="container2 mx-5 text-center">
+      <select class="form-group col-sm-4 mx-auto" name="" id="familyName">
+        <option value="X">chọn thành viên</option>
+        <option id="bo" value="B">Bố</option>
+        <option id="me" value="M">Mẹ</option>
+        <option id="anh" value="A">Anh trai</option>
+        <option id="em" value="E">Em gái</option>
+      </select>
+      <div class="text-center col-sm-12 mx-auto">
+        <button class="btn btn-primary" onclick="ex1()">câu chào hỏi</button>
+      </div>
+      <div
+        style="display: none"
+        id="result2-wrapper"
+        class="text-center col-sm-12 mx-auto"
+      >
+        <p id="result2"></p>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1 class="mx-auto text-center">bài 3</h1>
+    <div class="container3 mx-5">
+      <div class="row">
+        <div class="form-group col-sm-4 mx-auto">
+          <label>Number1</label>
+          <input class="form-control" id="number_1" placeholder="nhập số" />
+        </div>
+        <div class="form-group col-sm-4 mx-auto">
+          <label>number2</label>
+          <input class="form-control" id="number_2" placeholder="nhập số" />
+        </div>
+        <div class="form-group col-sm-4 mx-auto">
+          <label>Number3</label>
+          <input class="form-control" id="number_3" placeholder="nhập số" />
+        </div>
+        <div class="text-center col-sm-12 mx-auto">
+          <button class="btn btn-primary" id="ketqua">Kết Quả</button>
+        </div>
+        <div
+          style="display: none"
+          id="result3-wrapper"
+          class="text-center col-sm-12 mx-auto"
+        >
+          <p id="result3"></p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1 class="mx-auto text-center">bài 4</h1>
+    <div class="container4 mx-5">
+      <div class="row">
+        <div class="form-group col-sm-4 mx-auto">
+          <label>cạnh 1</label>
+          <input class="form-control" id="canh1" placeholder="độ dài cạnh 1" />
+        </div>
+        <div class="form-group col-sm-4 mx-auto">
+          <label>cạnh 2</label>
+          <input class="form-control" id="canh2" placeholder="độ dài cạnh 2" />
+        </div>
+        <div class="form-group col-sm-4 mx-auto">
+          <label>cạnh 3</label>
+          <input class="form-control" id="canh3" placeholder="độ dài cạnh 3" />
+        </div>
+        <div class="text-center col-sm-12 mx-auto">
+          <button class="btn btn-primary" id="dudoan">dự đoán</button>
+        </div>
+        <div
+          style="display: none"
+          id="result4-wrapper"
+          class="text-center col-sm-12 mx-auto"
+        >
+          <p id="result4"></p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1 class="mx-auto text-center">bài 5</h1>
+    <div class="container5 mx-5">
+      <!-- <div class="row">
+        <div class="form-group col-sm-4 mx-auto">
+          <label>Ngày</label>
+          <input
+            class="form-control"
+            type="number"
+            id="day"
+            placeholder="nhập ngày"
+          />
+        </div>
+        <div class="form-group col-sm-4 mx-auto">
+          <label>Tháng</label>
+          <input
+            class="form-control"
+            type="number"
+            id="month"
+            placeholder="nhập tháng"
+          />
+        </div>
+        <div class="form-group col-sm-4 mx-auto">
+          <label>Năm</label>
+          <input
+            class="form-control"
+            type="number"
+            id="year"
+            placeholder="nhập năm"
+          />
+        </div>
+        <div class="text-right col-sm-6 mx-auto">
+          <button class="btn btn-primary" id="daybefore">ngày hôm trước</button>
+        </div>
+        <div class="col-sm-6 mx-auto">
+          <button class="btn btn-primary" id="dayafter">ngày hôm sau</button>
+        </div>
+        <div
+          style="display: none"
+          id="result5-wrapper"
+          class="text-center col-sm-12 mx-auto"
+        >
+          <p id="result5"></p>
+        </div>
+      </div> -->
+      <input
+        class="form-control col-sm-4 mx-auto text-center"
+        type="date"
+        name=""
+        id="today"
+        placeholder="dd-mm-yyyy"
+      />
+      <div class="row">
+        <div class="text-right col-sm-6 mx-auto">
+          <button class="btn btn-primary" id="daybefore">ngày hôm trước</button>
+        </div>
+        <div class="col-sm-6 mx-auto">
+          <button class="btn btn-primary" id="dayafter">ngày hôm sau</button>
+        </div>
+        <div
+          style="display: none"
+          id="result5-wrapper"
+          class="text-center col-sm-12 mx-auto"
+        >
+          <p id="result5"></p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1 class="mx-auto text-center">bài 6</h1>
+    <div class="container6 mx-5">
+      <div class="row text-center">
+        <div class="form-group col-sm-4 mx-auto">
+          <label>Tháng</label>
+          <input
+            class="form-control text-center"
+            type="number"
+            id="thang"
+            placeholder="nhập tháng"
+          />
+        </div>
+        <div class="form-group col-sm-4 mx-auto">
+          <label>Năm</label>
+          <input
+            class="form-control text-center"
+            type="number"
+            id="nam"
+            placeholder="nhập năm"
+          />
+        </div>
+        <div class="text-center col-sm-6 mx-auto">
+          <button class="btn btn-primary" id="tinhngay">tính ngày</button>
+        </div>
+        <div
+          style="display: none"
+          id="result6-wrapper"
+          class="text-center col-sm-12 mx-auto"
+        >
+          <p id="result6"></p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1 class="mx-auto text-center">bài 7</h1>
+    <div class="container7 mx-5">
+      <div class="row text-center">
+        <div class="form-group col-sm-4 mx-auto">
+          <label>nhập số có 3 chữ số</label>
+          <input
+            class="form-control text-center"
+            type="number"
+            id="numberEl"
+            placeholder="nhập số"
+          />
+        </div>
+        <div class="text-center col-sm-12 mt-auto">
+          <button class="btn btn-primary" id="docso">đọc số</button>
+        </div>
+        <div
+          style="display: none"
+          id="result7-wrapper"
+          class="text-center col-sm-12 mx-auto"
+        >
+          <p id="result7"></p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1 class="mx-auto text-center">bài 8</h1>
+    <div class="container8 mx-5">
+      <div class="row">
+        <div class="form-group col-sm-4 mx-auto">
+          <label>Sinh viên 1</label>
+          <input class="form-control" id="ten1" placeholder="nhập tên" />
+        </div>
+        <div class="form-group col-sm-4 mx-auto">
+          <label>...</label>
+          <input
+            class="form-control text-center"
+            type="number"
+            id="x1"
+            placeholder="nhập tọa độ x"
+          />
+        </div>
+        <div class="form-group col-sm-4 mx-auto">
+          <label>...</label>
+          <input
+            class="form-control text-center"
+            type="number"
+            id="y1"
+            placeholder="nhập tọa độ y"
+          />
+        </div>
+        <div class="form-group col-sm-4 mx-auto">
+          <label>Sinh viên 2</label>
+          <input class="form-control" id="ten2" placeholder="nhập tên" />
+        </div>
+        <div class="form-group col-sm-4 mx-auto">
+          <label>...</label>
+          <input
+            class="form-control text-center"
+            type="number"
+            id="x2"
+            placeholder="nhập tọa độ x"
+          />
+        </div>
+        <div class="form-group col-sm-4 mx-auto">
+          <label>...</label>
+          <input
+            class="form-control text-center"
+            type="number"
+            id="y2"
+            placeholder="nhập tọa độ y"
+          />
+        </div>
+        <div class="form-group col-sm-4 mx-auto">
+          <label>Sinh viên 3</label>
+          <input class="form-control" id="ten3" placeholder="nhập tên" />
+        </div>
+        <div class="form-group col-sm-4 mx-auto">
+          <label>...</label>
+          <input
+            class="form-control text-center"
+            type="number"
+            id="x3"
+            placeholder="nhập tọa độ x"
+          />
+        </div>
+        <div class="form-group col-sm-4 mx-auto">
+          <label>...</label>
+          <input
+            class="form-control text-center"
+            type="number"
+            id="y3"
+            placeholder="nhập tọa độ y"
+          />
+        </div>
+        <div class="form-group col-sm-4 ml-0">
+          <label>trường học</label>
+          <input
+            class="form-control text-center"
+            type="number"
+            id="x4"
+            placeholder="nhập tọa độ x"
+          />
+        </div>
+        <div class="form-group col-sm-4 ml-0">
+          <label>...</label>
+          <input
+            class="form-control text-center"
+            type="number"
+            id="y4"
+            placeholder="nhập tọa độ y"
+          />
+        </div>
+        <div class="text-center col-sm-12 mx-auto">
+          <button class="btn btn-primary" id="tim">tìm</button>
+        </div>
+        <div
+          style="display: none"
+          id="result8-wrapper"
+          class="text-center col-sm-12 mx-auto"
+        >
+          <p id="result8"></p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <script src="./index.js"></script>
+  </body>
+</html>
